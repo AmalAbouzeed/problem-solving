@@ -1,0 +1,19 @@
+
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <string>
+#include <sstream>
+#include <stdio.h>
+#include <vector>
+using namespace std;
+ 
+int main() {
+int N,H,M,S;
+cin>>N;
+H=N/3600;
+M=(N-H*3600)/60;
+S=(N-H*3600)-M*60;
+cout<<H<<":"<<M<<":"<<S<<endl;
+	return 0;
+}
