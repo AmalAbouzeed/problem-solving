@@ -1,0 +1,35 @@
+#include <iostream>
+#include<string>
+#include<iomanip>
+ 
+using namespace std;
+int main() {
+ 
+	double n = 0;
+	cin >> n;
+	if (n <= 400.00)
+		cout << "Novo salario: " << fixed << setprecision(2) << n + (n * 0.15) << endl
+		<< "Reajuste ganho: " << fixed << setprecision(2) << (n * 0.15) << endl
+		<< "Em percentual: " << fixed << setprecision(2) << "15 %" << endl;
+	if( n >400.00 && n<= 800.00)
+		cout << "Novo salario: " << fixed << setprecision(2) << n + (n * 0.12) << endl
+		<< "Reajuste ganho: " << fixed << setprecision(2) << (n * 0.12) << endl
+		<< "Em percentual: " << fixed << setprecision(2) << "12 %" << endl;
+	if (n > 800.00 && n <= 1200.00)
+		cout << "Novo salario: " << fixed << setprecision(2) << n + (n * 0.10) << endl
+		<< "Reajuste ganho: " << fixed << setprecision(2) << (n * 0.10) << endl
+		<< "Em percentual: " << fixed << setprecision(2) << "10 %" << endl;
+	if (n > 1200.00 && n <= 2000.00)
+		cout << "Novo salario: " << fixed << setprecision(2) << n + (n * 0.07) << endl
+		<< "Reajuste ganho: " << fixed << setprecision(2) << (n * 0.07) << endl
+		<< "Em percentual: " << fixed << setprecision(2) << "7 %" << endl;
+	if (n >  2000.00)
+		cout << "Novo salario: " << fixed << setprecision(2) << n + (n * 0.04) << endl
+		<< "Reajuste ganho: " << fixed << setprecision(2) << (n * 0.04) << endl
+		<< "Em percentual: " << fixed << setprecision(2) << "4 %" << endl;
+ 
+ 
+ 
+ 
+	return 0;
+}
