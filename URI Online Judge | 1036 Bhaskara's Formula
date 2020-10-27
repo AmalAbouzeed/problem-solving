@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    double A = 0.0 , B = 0.0 , C = 0.0 ;
+    cin >> A >> B >> C ;
+    float Root = pow(B,2)-(4*A*C);
+    if ( (2*A) == 0.0 || Root < 0.0)
+        cout << "Impossivel calcular" << endl ;
+    else
+        cout << fixed << setprecision(5) << "R1 = " << ((-B) + sqrt(Root))/(2*A) << endl
+                                         << "R2 = " << ((-B) - sqrt(Root))/(2*A) << endl;
+
+    return 0;
+}
