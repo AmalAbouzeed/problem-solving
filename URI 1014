@@ -1,0 +1,18 @@
+#include <iostream>
+ 
+
+ #include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int X = 0;
+    float Y = 0.0 ;
+
+    cin >> X >> fixed >> setprecision(1) >> Y ;
+    cout << fixed << setprecision(3) << (float) X / Y << ' ' << "km/l" << endl;
+    return 0;
+}
+
+ 
