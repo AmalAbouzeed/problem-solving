@@ -1,0 +1,15 @@
+#include<iostream>
+#include<iomanip>
+#include<string>
+using namespace std;
+int main(){
+	string name="";
+	double salary=0.0, total_sold=0.0, net_salary_per_month=0.0,Bonus=0.0;
+	cin>>name;
+	cin>>salary >>total_sold;
+	Bonus=total_sold*0.15;
+	net_salary_per_month=salary+Bonus;
+	cout<<fixed<<setprecision(2)<<"TOTAL = R$ "<<net_salary_per_month<<"\n";
+ 
+return 0;
+}
